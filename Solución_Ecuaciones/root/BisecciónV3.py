@@ -19,7 +19,7 @@ b = float(input("Introduce el límite superior del intervalo: "))
 tol = float(input("Introduce la tolerancia: "))
 n0 = int(input("Introduce el número máximo de iteraciones: "))
 
-def biseccion(a, b, tol, n0):
+def biseccion(f,a, b, tol, n0):
     # Verificamos que la función cambie de signo, este método lo requiere
     if f(a) * f(b) > 0.0:
         print("No es posible realizar este método con los datos dados")
@@ -43,7 +43,7 @@ def biseccion(a, b, tol, n0):
     print (f"se hicieron {i} iteraciones")
 
 # Llamamos a la función bisección con los valores proporcionados por el usuario
-biseccion(a, b, tol, n0)
+biseccion(f,a, b, tol, n0)
 
 
 # In[ ]:
