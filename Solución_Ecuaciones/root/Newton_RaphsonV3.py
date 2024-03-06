@@ -22,7 +22,7 @@ p0 = eval(input("Introduce el valor inicial p0: "))
 TOL = float(input("Introduce la tolerancia: "))
 N0 = int(input("Introduce el número máximo de iteraciones: "))
 
-def newton(p0, TOL, N0):
+def newton(f, df, p0, TOL, N0):
     i = 1 # Contador de iteraciones
     while (i <= N0):
         p = p0 - f(p0) / df(p0) # Aplicamos el método de Newton
@@ -36,7 +36,7 @@ def newton(p0, TOL, N0):
     if i == N0:
         print("El algoritmo llegó al número máximo de iteraciones definido")
 # Llamamos a nuestra función con los valores proporcionados por el usuario
-newton(p0, TOL, N0)
+newton(f, df, p0, TOL, N0)
 
 
 # In[ ]:
