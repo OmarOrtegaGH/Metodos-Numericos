@@ -16,7 +16,7 @@ p0 = eval(input("Introduce el valor inicial p0: "))
 TOL = float(input("Introduce la tolerancia: "))
 n0 = int(input("Introduce el número máximo de iteraciones: "))
 
-def puntofijo(p0,TOL,n0):
+def puntofijo(g,p0,TOL,n0):
     
     i = 1 # Determinamos un contador para las iteraciones
     while i <= n0: # Mientras que el contador no llegue al número maximo de iteraciones permitidas definidas hará el proceso
@@ -31,7 +31,7 @@ if i > n0:
     print(f"El método falló después de {n0} iteraciones (El procedimiento no fue exitoso)")
 
 print(f"después de {i} iteraciones:")
-puntofijo(p0,TOL,n0)
+puntofijo(g,p0,TOL,n0)
 
 
 # In[ ]:
