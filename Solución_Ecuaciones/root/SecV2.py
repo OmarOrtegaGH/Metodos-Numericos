@@ -50,10 +50,6 @@ def secv2():
         print("Se llegó al número máximo de iteraciones")    
     print (f"se hicieron {i} iteraciones")
 
-# Llamamos a la función bisección con los valores proporcionados por el usuario
-secv2()
-
-
 # In[ ]:
 
 
