@@ -33,5 +33,3 @@ def secv1():
     else:
         print("se alcanzó el número máximo de iteraciones")
         return p
-secv1()    
-
